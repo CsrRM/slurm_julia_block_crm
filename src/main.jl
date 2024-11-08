@@ -1,9 +1,15 @@
 using JLD2
 @everywhere begin
     using Quantica
+    using FullShell
+    using Parameters
     using ProgressMeter
-    include("functions.jl")
+    include("calc_muxLDOS.jl")
+    include("parallelizers.jl")
 end
-## Run 
-LDOS = mwe()
-save("data/LDOS.jld2", "LDOS", LDOS)
+
+## Run
+
+calc_muxLDOS(0.0)
+
+#save("data/LDOS.jld2", "LDOS", LDOS)
