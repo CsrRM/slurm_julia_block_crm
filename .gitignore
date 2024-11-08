@@ -1,6 +1,6 @@
 data/
 figures/
-plots/
 logs/
+plot/
 .julia_depot/
 .DS_Store
