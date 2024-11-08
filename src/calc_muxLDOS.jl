@@ -33,8 +33,8 @@ function calc_muxLDOS(input)
     g = hSCL_f |> attach(gR; reverse = false, region = r -> r == rend) |> greenfunction()
 
     # Set calculation parameters
-    Φrng = range(0.0, 2.5, length = 50)
-    ωrng = range(-.26, 0, length = 51)         # WARNING: code for superconductor is only valid for NEGATIVE ω. However, all quantities must be symmetric in ω.
+    Φrng = range(0.0, 2.5, length = 110)
+    ωrng = range(-.26, 0, length = 111)         # WARNING: code for superconductor is only valid for NEGATIVE ω. However, all quantities must be symmetric in ω.
     Zs = 0                                     # Angular momentum modes included. These calculatiosn are independent and can be de-parallelized.    
 
     # Compute LDOS 
