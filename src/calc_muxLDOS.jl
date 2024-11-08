@@ -6,14 +6,14 @@ function calc_muxLDOS(input)
         μ = 0.00, α = 60, g = 0,
         Δ0 = 0.23, ξd = 70,
         #Parameters for μ(x)
-        Vmax = -0.750, 
+        Vmax = -0.75, 
         Vshift = input, Lstep = 1000, ς = 100
     )
     #Detail params of the infinite μ(cst) wire (right, R, wire)
     wireR = (; 
         R = 50, w = 0, d = 0,
         a0 = 5,
-        μ = 0.50 + wireL[end-2], α = 60, g = 0,
+        μ = 0.75 + wireL[end-2], α = 60, g = 0,
         Δ0 = 0.23, ξd = 70,
     )
     #Build both wires
